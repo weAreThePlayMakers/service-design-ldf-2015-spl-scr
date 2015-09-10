@@ -1,10 +1,16 @@
 #SERVICE DESIGN @ LDF 2015
 
-[![Join the chat at https://gitter.im/weAreThePlayMakers/service-design-ldf-2015-spl-scr](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/weAreThePlayMakers/service-design-ldf-2015-spl-scr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 The London Design Festival is a celebration of design. Service designers are now taking part to show the game-changing work they are doing during this world renowned festival.
 
 We are producing a map of service design events going on around the capital during the festival (19-27 September 2015). Find out what the innovative players in the field of service design are doing.
+
+---
+
+If you are on github and would like to get involved with development of this static web page for the service design @ LDF 2015 or if you have any questions in respect of the initiative: 
+
+[![Join the chat at https://gitter.im/weAreThePlayMakers/service-design-ldf-2015-spl-scr](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/weAreThePlayMakers/service-design-ldf-2015-spl-scr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+---
 
 #EVENT LISTINGS
 
