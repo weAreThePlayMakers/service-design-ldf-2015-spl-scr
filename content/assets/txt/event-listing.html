@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README</title>
+<style>
+/* 
+Name: Github ReadMe style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/hzlzh/Mou-Theme
+*/
+@charset "UTF-8";
+body, input, select, textarea, button{ font:13px/1.4 Helvetica, arial, freesans, clean, sans-serif; color:#333333; }
+body{ background-color:#FFFFFF; color:#333333; background-color:#FFFFFF; border:3px solid #EEEEEE; padding:0 30px 30px; font-size:15px; line-height:1.7; margin:20px auto; max-width:722px;margin-left: 10px; border-radius:3px 3px 3px 3px; }
+a{ color:#4183C4; text-decoration:none; }
+a:hover{ text-decoration:underline; }
+a:focus, a:active{ text-decoration:underline; }
+.action{ color:#DD0000; text-decoration:underline; }
+.clearfix:before, .clearfix:after{ content:" "; display:table; }
+.clearfix:after{ clear:both; }
+.danger{ color:#CC0000; }
+.mute{ color:#000000; }
+.sparkline{ display:none; }
+.right{ float:right; }
+.left{ float:left; }
+.text-right{ text-align:right; }
+.text-left{ text-align:left; }
+.hidden{ display:none; }
+.warning{ background-color:#FFFCCC; font-weight:bold; margin-bottom:0.8em; padding:0.5em; }
+.error_box{ background-color:#FFEBE8; border:1px solid #DD3C10; font-weight:bold; padding:1em; }
+hr, .rule{ -moz-border-bottom-colors:none; -moz-border-left-colors:none; -moz-border-right-colors:none; -moz-border-top-colors:none; background:none repeat scroll 0% 0% transparent; border-color:-moz-use-text-color -moz-use-text-color #DDDDDD; border-image:none; border-style:none none solid; border-width:medium medium 1px; clear:both; height:0px; margin:15px 0px; overflow:hidden; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{ display:block; }
+audio, canvas, video{ display:inline-block; }
+audio:not([controls]){ display:none; height:0px; }
+html{ font-family:sans-serif; }
+a:focus{ outline:thin dotted; }
+a:active, a:hover{ outline:0px none; }
+h1{ font-size:2em; margin:0.67em 0px; }
+abbr[title]{ border-bottom:1px dotted; }
+b, strong{ font-weight:bold; }
+dfn{ font-style:italic; }
+hr{ -moz-box-sizing:content-box; height:0px; }
+mark{ background:none repeat scroll 0% 0% #FFFF00; color:#000000; }
+code, kbd, pre, samp{ font-family:monospace, serif; font-size:1em; }
+q{ quotes:"“" "”" "‘" "’"; }
+small{ font-size:80%; }
+sub, sup{ font-size:75%; line-height:0; position:relative; vertical-align:baseline; }
+sup{ top:-0.5em; }
+sub{ bottom:-0.25em; }
+img{ border:0px none; }
+figure{ margin:0px; }
+fieldset{ border:1px solid #C0C0C0; margin:0px 2px; padding:0.35em 0.625em 0.75em; }
+legend{ border:0px none; padding:0px; }
+button, input, select, textarea{ font-family:inherit; font-size:100%; margin:0px; }
+button, input{ line-height:normal; }
+button, select{ text-transform:none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"]{ cursor:pointer; }
+button[disabled], html input[disabled]{ cursor:default; }
+input[type="checkbox"], input[type="radio"]{ padding:0px; }
+input[type="search"]{ -moz-box-sizing:content-box; }
+button::-moz-focus-inner, input::-moz-focus-inner{ border:0px none; padding:0px; }
+textarea{ overflow:auto; vertical-align:top; }
+table{ border-collapse:collapse; border-spacing:0px; }
+h1, h2, h3, h4, h5, h6{ line-height:1.1; margin-bottom:15px; margin-top:15px; }
+h1{ font-size:30px; }
+h2{ font-size:21px; }
+h3{ font-size:16px; }
+h4{ font-size:14px; }
+h5{ font-size:12px; }
+h6{ font-size:11px; }
+small{ font-size:90%; }
+blockquote{ margin:0px; }
+.lead{ color:#555555; font-size:20px; font-weight:300; margin-bottom:30px; }
+ul, ol{ margin-bottom:0px; margin-top:0px; padding:0px; }
+dd{ margin-left:0px; }
+code, pre{ font-family:Consolas, "Liberation Mono", Courier, monospace; font-size:12px; }
+pre{ margin-bottom:0px; margin-top:0px; }
+a.absent{ color:#CC0000; }
+a.anchor{ bottom:0px; cursor:pointer; display:block; left:0px; margin-left:-30px; padding-left:30px; position:absolute; top:0px; }
+h1, h2, h3, h4, h5, h6{ cursor:text; font-weight:bold; line-height:1.7; margin:1em 0px 15px; padding:0px; position:relative; }
+h1 .octicon-link, h2 .octicon-link, h3 .octicon-link, h4 .octicon-link, h5 .octicon-link, h6 .octicon-link{ color:#000000; display:none; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ line-height:1; margin-left:-22px; padding-left:0px; text-decoration:none; top:15%; }
+h1:hover a.anchor .octicon-link, h2:hover a.anchor .octicon-link, h3:hover a.anchor .octicon-link, h4:hover a.anchor .octicon-link, h5:hover a.anchor .octicon-link, h6:hover a.anchor .octicon-link{ display:inline-block; }
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code{ font-size:inherit; }
+h1, h2, h3, h4, h5, h6{ cursor:text; font-weight:bold; line-height:1.7; }
+h1{ border-bottom:1px solid #DDDDDD; font-size:2.5em; }
+h2{ border-bottom:1px solid #EEEEEE; font-size:2em; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ color:#777777; font-size:1em; }
+p, blockquote, ul, ol, dl, table, pre{ margin:15px 0px; }
+hr{ background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC") repeat-x scroll 0px 0px transparent; border:0px none; color:#CCCCCC; height:4px; margin:15px 0px; padding:0px; }
+li p.first{ display:inline-block; }
+ul, ol{ padding-left:30px; }
+ul.no-list, ol.no-list{ list-style-type:none; padding:0px; }
+ul ul, ul ol, ol ol, ol ul{ margin-bottom:0px; margin-top:0px; }
+dl{ padding:0px; }
+dl dt{ font-size:14px; font-style:italic; font-weight:bold; margin-top:15px; padding:0px; }
+dl dd{ margin-bottom:15px; padding:0px 15px; }
+blockquote{ border-left:4px solid #DDDDDD; color:#777777; padding:0px 15px; }
+blockquote > :first-child{ margin-top:0px; }
+blockquote > :last-child{ margin-bottom:0px; }
+table{ display:block; overflow:auto; width:100%; }
+table th{ font-weight:bold; }
+table th, table td{ border:1px solid #DDDDDD; padding:6px 13px; }
+table tr{ background-color:#FFFFFF; border-top:1px solid #CCCCCC; }
+table tr:nth-child(2n){ background-color:#F8F8F8; }
+img{ -moz-box-sizing:border-box; max-width:100%; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #DDDDDD; display:block; float:left; margin:13px 0px 0px; overflow:hidden; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0px 0px; }
+span.align-center{ clear:both; display:block; overflow:hidden; }
+span.align-center > span{ display:block; margin:13px auto 0px; overflow:hidden; text-align:center; }
+span.align-center span img{ margin:0px auto; text-align:center; }
+span.align-right{ clear:both; display:block; overflow:hidden; }
+span.align-right > span{ display:block; margin:13px 0px 0px; overflow:hidden; text-align:right; }
+span.align-right span img{ margin:0px; text-align:right; }
+span.float-left{ display:block; float:left; margin-right:13px; overflow:hidden; }
+span.float-left span{ margin:13px 0px 0px; }
+span.float-right{ display:block; float:right; margin-left:13px; overflow:hidden; }
+span.float-right > span{ display:block; margin:13px auto 0px; overflow:hidden; text-align:right; }
+code, tt{ background-color:#F8F8F8; border-radius:3px 3px 3px 3px; border:1px solid #DDDDDD; margin:0px 2px; padding:0px 5px; }
+code{ white-space:nowrap; }
+pre > code{ background:none repeat scroll 0% 0% transparent; border:medium none; margin:0px; padding:0px; white-space:pre; }
+pre, pre{ width:100%;background-color:#F8F8F8; border-radius:3px 3px 3px 3px; border:1px solid #DDDDDD; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; }
+pre code, pre tt{ background-color:transparent; border:medium none; margin:0px; padding:0px; }
+code, pre{ font-family:Consolas, "Liberation Mono", Courier, monospace; font-size:12px; }
+</style>
+</head>
+<body>
+<h1 id="servicedesignldf2015">SERVICE DESIGN @ LDF 2015</h1>
+
+<p>The London Design Festival is a celebration of design. Service designers are now taking part to show the game-changing work they are doing during this world renowned festival.</p>
+
+<p>We are producing a map of service design events going on around the capital during the festival (19&#8211;27 September 2015). Find out what the innovative players in the field of service design are doing.</p>
+
+<hr />
+
+<p>If you are on github and would like to get involved with development of this static web page for the service design @ LDF 2015 or if you have any questions in respect of the initiative: </p>
+
+<p><a href="https://gitter.im/weAreThePlayMakers/service-design-ldf-2015-spl-scr?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/weAreThePlayMakers/service-design-ldf-2015-spl-scr" /></a></p>
+
+<hr />
+
+<h1 id="eventlistings">EVENT LISTINGS</h1>
+
+<p>These listings are live – more information will be added as speakers and event hosts confirm places.</p>
+
+<h2 id="pre-festival">Pre-festival</h2>
+
+<h3 id="16september">16 September</h3>
+
+<h4 id="6.30-9pm">6.30&#8211;9pm</h4>
+
+<p><a href="https://servicedesignldf.wordpress.com/2015/09/07/sdns-fight-club/">Fight Club, SDN network</a></p>
+
+<p>18:30&#8211;21:00
+16 September 2015
+Head, Holden House, 57 Rathbone Place, London, W1T 1JU
+Free, book in advance</p>
+
+<p>Screen Shot 2015&#8211;09&#8211;01 at 21.14.38</p>
+
+<p>We are delighted that SDN will be hosting the first of our service design events during this year’s London Design Festival.</p>
+
+<p>The Service Design Network UK Chapter represents and connects the UK’s Service Design industry. Service Design is an established practice within the UK, with some great companies blazing the trail. SDN UK aims to connect the community and enable knowledge share at all levels.</p>
+
+<p>Come join like-minded service designers for SDN’s first live debate or as we like to call it, Fight Club. Two teams must battle it out but there can only be one winner. Which team has the most persuasive argument? Who’s up against the ropes at the end of each round? You decide!</p>
+
+<p>Featuring Dr. Graham Hill and Hannah Kops vs Dominic Campbell and Carrie Bishop.</p>
+
+<p>This fast-paced event will be kicking off from 18:30pm at Head London on the 26th September 2015. Book your place right here, right now.</p>
+
+<hr />
+
+<h2 id="londondesignfestival">London Design Festival</h2>
+
+<h3 id="21september">21 September</h3>
+
+<h4 id="3-5pm">3&#8211;5pm</h4>
+
+<p><a href="https://servicedesignldf.wordpress.com/2015/09/09/opportunities-in-government-policy-lab/">Opportunities in Government, Policy Lab</a></p>
+
+<p>Monday 21 &amp; repeated on Friday 25 September 2015
+15:00&#8211;17:00</p>
+<p>Cabinet Office, 1 Horse Guards Road, Westminster</p>
+
+<p>Policy Lab is a creative space which supports Government departments to use innovative tools and techniques – including service design – to make better policies and public services for the public. We bring together policymakers, external designers, front-line service providers and members of the public to come up with fresh perspectives and ideas around tricky long-term policy problems.</p>
+
+<p>We will running two sessions from 3&#8211;5pm on both Monday 21st September and Friday 25th September at the Cabinet Office in the heart of Government. We will talk to you about our work in Policy Lab, and then have a discussion about the opportunities and challenges for service design in Government. We’ll then give you a chance to experience some of our tools and techniques, and open up some our current policy challenges to your insight and ideas.</p>
+
+<p>Places are limited to 16 people per session. With apologies, Monday’s session has no disability access.</p>
+
+<p>@PolicyLabUK
+<a href="http://www.slideshare.net/Openpolicymaking/policy-lab-slide-share-introduction-final">Read the introduction to Policy Lab</a></p>
+
+<hr />
+
+<h3 id="22september">22 September</h3>
+
+<h4 id="10am-12.30pm">10am&#8211;12.30pm</h4>
+
+<p><a href="https://servicedesignldf.wordpress.com/2015/09/07/circular-economy-workshop-we-all-design/">Circular Economy Workshop, We All Design</a></p>
+
+<p>10am&#8211;12.30pm
+22 September
+Makerversity, Somerset House, New Wing, Lancaster Place, WC2R 1LA</p>
+
+<p>Circular Economy Workshop
+Service design is very effective at creating organisational change and has also made a big contribution to social innovation. But it is very rarely part of the discussion around environmental impact and at We All Design we think it should be. We believe that we need to manage our resources better so that we can thrive as a society and business to avoid widespread systemic failure.</p>
+
+<p>Recent years have seen the development of a circular economy as positive driver for reducing environmental impact. At its most basic, the circular economy is a hierarchy of resources, which moves from repair to recycling in a closed loop. For example a mobile phones life can be extended if it is well cared for. Retailers might then pay the customer for the return of the phone and harvest it for valuable parts to recycle the value materials.</p>
+
+<p>But the solution for a circular economy is not all about making better ‘things’. Our experiences at We All Design have taught us that in order to make ‘materials flow’, we need information to flow, customers to have better experiences and business models that embed the full lifecycle of materials involved.</p>
+
+<p>Looking at a diagram of the circular economy hierarchy, service design does not feature in a particular icon, instead it takes place between them in the arrows. In that way service design has massive potential in binding the circular economy together.</p>
+
+<p>For this workshop we want to explore how service design tools can serve to develop the circular economy and what would it look like if we redesigned service design tools so that they can be applied in the context of the circular economy.</p>
+
+<p>About Rob Maslin, director of We All Design
+As a service designer Rob’s mission is to humanise the circular economy. He has worked on design and research projects with clients in a broad range of sectors including: Kyocera, Imperial College Business School, local authorities, V&amp;A, Haworth, Treebox, Great Recovery, KTN and Centre For Sustainable Design.</p>
+
+<p>@RobMaslin</p>
+
+<p>About Simone Veldema, DesignThinkersGroup
+Simone Veldema is a service and business model designer specialised in innovation, and making business in Circular Design. She supports people to explore and build new ways of doing business. Most of the people whether they work for large organisations, governments or are small entrepreneurs, have difficulties to start doing. They have all these great ideas, but do not know “HOW” to do it. They are very much pleased that adopting a Service Design Thinking mindset delivers real change, new business models and fun and thrust back in their work. Together with Rob Maslin, Simone is now cowriting a book on “Designing Services for the Circular Economy” to be launched at AUTUMN 2016 (BIS PUBLISHERS)</p>
+
+<p>Simone@designthinkersgroup.com
+@GreenbizStartup
+nl.linkedin.com/in/sveldema</p>
+
+<h4 id="2-5pm">2&#8211;5pm</h4>
+
+<p>[Informal service design talks and group discussions at Makerversity]</p>
+
+<h4 id="6pm">6pm</h4>
+
+<p><a href="https://servicedesignldf.wordpress.com/2015/09/08/the-interchange-launch-with-snook/">The Interchange, Snook</a></p>
+
+<p>18:00
+22 September 2015
+Father Thomas Room, St Mary’s Flats, Doric Way, London, NW1 1LB
+Free, reserve a place</p>
+
+<p>Interchange</p>
+
+<p>The Interchange, a collaborative innovation studio at the heart of the community, would like to say hello.</p>
+
+<p>A networking evening with organisations that have an active interest in using design methods within the areas of equality and social justice. Companies include Snook, The Point People, Settle and Spark and Mettle.</p>
+
+<p>The evening is chance to be introduced to The Interchange and it’s community approach while also getting the opportunity to chat with experienced service designers and hear short talks about a variety of current projects.</p>
+
+<p>hello@theinterchangestudio.com
+<code>#interchangestudio</code>
+theinterchangestudio.com</p>
+
+<hr />
+
+<h3 id="24september">24 September</h3>
+
+<h4 id="4pm">4pm</h4>
+
+<p><a href="https://servicedesignldf.wordpress.com/2015/09/09/passenger-driven-service-innovation-in-public-transport-stby/">Passenger Driven Service Innovation in Public Transport, STBY</a></p>
+
+<p>16:00
+Thursday 24 September 2015
+Unicorn House, 221 Shoreditch High St, London, E1 6PJ</p>
+
+<p>STBY is hosting a hands-on workshop on Service Design in Public Transport, at our studio in Shoreditch. We’ll give a brief overview of the work we do here at STBY, and then dive in to some collaborative exercises and activities. Using various methods in Service Design, we’ll share some of our own experiences on public transportation with each other. We’ll look at how to capture these user stories and journeys and translate them into meaningful insights and inspiration for service innovation. What could be the future of public transportation? Come join us to explore!</p>
+
+<p>This workshop is capped at 20 participants, so if you wish to attend please email sam@stby.eu as soon as possible to confirm your place.</p>
+
+<p>www.stby.eu
+@STBY</p>
+
+<h4 id="6.30pm">6.30pm</h4>
+
+<p><a href="https://servicedesignldf.wordpress.com/2015/09/07/the-ultimate-challenge-service-design-in-the-public-sector-futuregov-x-service-design-london/">The ultimate challenge: service design in the public sector, FutureGov</a></p>
+
+<p>18:30
+24 September 2015
+FutureGov, The Wenlock, Unit 201&amp; 202, 50&#8211;52 Wharf Road, London, N1 7EU
+Free, reserve a place</p>
+
+<p>A collaboration between FutureGov X Service Design London
+FutureGov is the digital and design company for public services. Over the past seven years, we’ve helped more than a hundred local and national authorities across four continents think differently about public services by combining service, product and organisational design. Service Design London is a community of people interested in service design. It organises regular events for everyone from battle scarred practitioners to the service design curious, providing an important place for people to come together and learn from each other.</p>
+
+<p>About the workshop
+In this hands on and interactive session you will experience how it feels to be a service designer in the public sector.</p>
+
+<p>We will share insights on how we’ve worked with public sector organisations to bring lasting, radical change. We will focus on how we’ve made that happen, tactics for change, and how we stay sane in infinite complexity.</p>
+
+<p>The focus of the session will give you the opportunity to flex your creative muscles and try out tools and methods on a real life brief about rethinking how children with special educational needs get to school.</p>
+
+<p>The session will end with the presentation of your solutions and of course pizza and beer.</p>
+
+<p>www.wearefuturegov.com
+@FutureGov</p>
+
+<p>http://www.meetup.com/London-Service-Design
+@rupert_tebb</p>
+
+<hr />
+
+<h3 id="25september">25 September</h3>
+
+<h4 id="3-5pm">3&#8211;5pm</h4>
+
+<p><a href="https://servicedesignldf.wordpress.com/2015/09/09/opportunities-in-government-policy-lab/">Opportunities in Government, Policy Lab</a></p>
+
+<p>Monday 21 &amp; repeated on Friday 25 September 2015
+15:00&#8211;17:00
+Cabinet Office, 1 Horse Guards Road, Westminster</p>
+
+<p>Policy Lab is a creative space which supports Government departments to use innovative tools and techniques – including service design – to make better policies and public services for the public. We bring together policymakers, external designers, front-line service providers and members of the public to come up with fresh perspectives and ideas around tricky long-term policy problems.</p>
+
+<p>We will running two sessions from 3&#8211;5pm on both Monday 21st September and Friday 25th September at the Cabinet Office in the heart of Government. We will talk to you about our work in Policy Lab, and then have a discussion about the opportunities and challenges for service design in Government. We’ll then give you a chance to experience some of our tools and techniques, and open up some our current policy challenges to your insight and ideas.</p>
+
+<p>Places are limited to 16 people per session. With apologies, Monday’s session has no disability access.</p>
+
+<p>@PolicyLabUK
+<a href="http://www.slideshare.net/Openpolicymaking/policy-lab-slide-share-introduction-final">Read the introduction to Policy Lab</a></p>
+
+<h4 id="5pm">5pm</h4>
+
+<p><a href="https://servicedesignldf.wordpress.com/2015/09/10/simplifying-voting-for-overseas-users-ziv-lazar/">Simplifying Voting For Overseas Users, Ziv Lazar</a></p>
+
+<p>25 September 2015
+Designersblock, Bargehouse, Oxo Tower Wharf, Bargehouse Street, South Bank, London, SE1 9PH</p>
+
+<p>Overseas voting is a complicated process that needs to be explained in a simple way in order to improve voting rates. Ziv will explain how this was done on the registertovote.gov.uk website.</p>
+
+<p>Ziv currently is working for the Cabinet Office on the ‘Register to Vote’ website. This is a simple looking website that was originally been built by the GDS for UK voters. It and has several legal and business obstacles for a great user experience. So while most UK based users go through it in a 5 minutes process, without too much trouble, Ziv has been focusing on the overseas voters path which has a very different user journey.</p>
+
+<p>About Ziv Lazar
+A user experience and service design consultant working on government websites and systems.</p>
+
+<p>linkedin.com/in/zivlazar</p>
+
+<h4 id="6-7pm">6&#8211;7pm</h4>
+
+<p>Civil Service Designer: Challenges of working in a multidisciplinary team, UKTI Ideas Lab</p>
+
+<h4 id="7pmonwards">7pm onwards</h4>
+
+<p><a href="https://servicedesignldf.wordpress.com/2015/09/08/service-design-drink-sd-london/">Service Design Drinks, in a pub near Oxo Tower</a></p>
+
+<p>19:00
+Friday 25 September 2015
+The Thirsty Bear, 62 Stamford Street, Blackfriars, London, SE1 9LX</p>
+
+<p>A free gathering for people are are practicing or studying Service Design, in a pub, over a beer and having a good chat with someone sharing the same passion.</p>
+
+<hr />
+
+<h3 id="26september">26 September</h3>
+
+<h4 id="2.30pm">2.30pm</h4>
+
+<p><a href="https://servicedesignldf.wordpress.com/2015/09/08/the-social-mining-union-exploring-cultural-capital-and-social-activism-in-lewisham-tearlach-byford-flokchart/">The Social Mining Union: exploring cultural capital and social activism in Lewisham, Tearlach Byford-Flokchart</a></p>
+
+<p>14:30
+26 September 2015
+Designersblock, Bargehouse, Oxo Tower Wharf, Bargehouse Street, South Bank, London, SE1 9PH</p>
+
+<p>Tearlach Byford-Flokchart is an designer and filmmaker; his work is concerned with the pierpherals within communities especially around the work place focusing how as designers we can integrate our concepts within society.</p>
+
+<p>From south London scrapyard to Glencore’s annual general meeting in Switzerland
+The Social Mining Union (SMU), aims to reposition the role of the ‘labour union’ (and function of positive activism) within a globalized landscape of a hyper-consumer society, examining the industrial mining industry and peripheral territories it is associated with.</p>
+
+<p>The Social Mining Union looks back at the industrial revolution when large-scale industries were centered on people and place. The paternalism of companies such as Cadbury and Unilever ensured that communities flourished around their places of work, sharing a common ground and an inherent sense of meaning. This affiliation between workers, industry and environment strengthened social and cultural values and cultivated prosperity at an individual level, which consequently had a positive effect on the commercial output.</p>
+
+<p>The Social Mining Union proposes a new form of capital, cultural capital: to develop and facilitate the social connections between work and place and additionally to generate a positive environment for those people with some of the toughest jobs on the planet.</p>
+
+<p>By working with people in Lewisham, London, to generate a hybrid design/mining discipline to venerate social infrastructures built upon the historical hinges of industrial Britain, whilst shifting the context assimilated to value within a global context.</p>
+
+<p>Mining discarded objects from all over New Cross (a district in the south London Borough of Lewisham), and ‘mining’ websites such as Gumtree and Freecycle for discarded computers (E-waste) I proceeded to sell this scrap back into local scrapyards.</p>
+
+<p>Re-contextualizing the Rag and Bone man I wanted to encourage a new form of social activism within the local community of Lewisham.</p>
+
+<p>Using the money earned from the scraped objects I proceeded to buy shares in Glencore (a multinational commodity trading and mining company).</p>
+
+<p>As a shareholder, I gained direct access and was able to infiltrate the annual general meeting of Glencore in May 2014, designing myself as a major shareholder through the infrastructure of business cards and a union website in order to be taken seriously.</p>
+
+<p>This project navigates new ways to engage with global superpowers, using alternative routes to access the centralised hubs and internal structures of these corporations by exploiting public company law (shares) and the by-product of big mining (scrap).</p>
+
+<p>By questioning the role and accountability of shareholders, The Social Mining Union aims to initiate a dialogue between three groups: the miners, the shareholders/management and the unions.</p>
+
+<h4 id="3pm">3pm</h4>
+
+<p>Jon Foster</p>
+
+<h4 id="3.30pm">3.30pm</h4>
+
+<p>Phil Nutley</p>
+
+<hr />
+
+<h2 id="post-festival">Post-festival</h2>
+
+<h3 id="29sept">29 Sept</h3>
+
+<h4 id="tbc">(TBC)</h4>
+
+<p>People Before Pixels</p>
+
+<hr />
+
+<h3 id="7oct">7 Oct</h3>
+
+<h4 id="9am">9am</h4>
+
+<p><a href="https://servicedesignldf.wordpress.com/2015/09/08/inside-design-uscreates/">Inside Design, UsCreates</a></p>
+
+<p>9:00
+7 October 2015
+HUB Westminster, 1st Floor New Zealand House 80, 80 Haymarket, London, SW1Y 4TE</p>
+
+<p>Uscreates are a service and communication design consultancy with a focus on health and wellbeing.</p>
+
+<p>Inside Design is a 2 hour workshop giving you the opportunity to experience the value design can deliver for you and your organisation</p>
+
+<p>Uscreates wholeheartedly believe in the value of design as an approach to problem-solving. Design has the power to address some of the world’s biggest challenges, including health and wellbeing and to unlock huge value for businesses. According to a Design Council report, every £1 invested in design yields £29 business returns, and £5.67 in public sector returns. Uscreates have been using a design approach to help our clients deliver great experiences, cost-efficiencies and social impact for over a decade.</p>
+
+<p>@uscreates
+Facebook.com/Uscreates
+LinkedIn.com/company/Uscreates
+)</p>
+
+<hr />
+
+</body>
+</html>
