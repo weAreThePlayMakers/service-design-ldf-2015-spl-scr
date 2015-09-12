@@ -115,6 +115,12 @@ nl.linkedin.com/in/sveldema
 
 [Informal service design talks and group discussions at Makerversity]
 
+14:00-17:00
+22 September 2015
+Makerversity, Somerset House, New Wing, Lancaster Place, WC2R 1LA
+
+An informal afternoon of talks and discussions about service design, including special guests that work in the Makerversity studios. Hear about how to bridge the gap between design and development, learn about ethics in service design, and discuss the value of open data. Speakers include shift.ms, ODI Devon and Sonia Barbey. 
+
 
 
 ####6pm
@@ -240,7 +246,15 @@ linkedin.com/in/zivlazar
 
 ####6-7pm
 
-Civil Service Designer: Challenges of working in a multidisciplinary team, UKTI Ideas Lab
+[Civil Service Designer: Challenges of working in a multidisciplinary team, UKTI Ideas Lab](https://servicedesignldf.wordpress.com/2015/09/11/service-design-in-government-the-ups-and-downs-ukti-ideas-lab/)
+
+18:00
+25 September 2015
+Designersblock, Bargehouse, Oxo Tower Wharf, Bargehouse Street, South Bank, London, SE1 9PH
+
+Mark Strong and Magda Rok work for UKTI Ideas Lab as a civil servant and service designer retrospectively.
+
+Mark and Magda will share with us their experiences with service design in government. They’ll focus on a project of theirs that looks at the education of school-aged children on international trade – using design methodology. 
 
 
 
